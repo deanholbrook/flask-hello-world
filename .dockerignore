@@ -1,0 +1,14 @@
+
+# Ignore Git and cache folders
+.git
+.gitignore
+.cache
+__pycache__
+.pytest_cache
+
+# Ignore Python virtual environment folders
+venv
+.venv
+
+# Ignore Visual Studio Code configuration folder
+.vscode
