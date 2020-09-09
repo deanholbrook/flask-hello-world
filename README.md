@@ -1,32 +1,34 @@
 ## About The Project
-Rudimentary project as a vehicle to demonstrate automated build, test, 
-and deployment of application to AWS as a Docker image.
+Rudimentary project to demonstrate automated build, test, 
+and deployment of Docker application to AWS.
 
 ### Built With
 * Flask
 * Docker
 
 ## Getting Started
-To get a local copy up and running follow these simple steps.
+TODO: put content here
 
 ### Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+To work with this project, you'll need the following software on your machine:
+* Git (source control management tool)
+* Docker (tool to package or "containerize" applications)
+* Python 3
 
 ### Installation
-
-1. Clone the repo
+1. Clone the code repository
 ```sh
-git clone https://github.com/kirby900/flask_hello_world.git
+git clone https://github.com/deanholbrook/hello-world.git
 ```
-2. Build Docker image
+2. Navigate to the new directory
 ```sh
-docker build -t flask-hello-world .
+cd hello-world
 ```
-3. Run Docker image on your local machine
+3. Build the Docker image
 ```sh
-docker run flask-hello-world
+docker build -t hello-world .  # don't forget the dot/period at end of the comand
+```
+4. Run Docker image on your local machine
+```sh
+docker run -p 5000:5000 hello-world
 ```
