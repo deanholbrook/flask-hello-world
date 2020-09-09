@@ -10,7 +10,7 @@ and deployment of Docker application to AWS.
 TODO: put content here
 
 ### Prerequisites
-To work with this project, you'll need the following software on your machine:
+To work with this project, you'll need the following software on your computer:
 * Git (source control management tool)
 * Docker (tool to package or "containerize" applications)
 * Python 3
