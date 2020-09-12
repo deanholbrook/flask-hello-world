@@ -12,6 +12,7 @@ app = Flask(__name__)
 @app.route("/health")
 def health():
     """Special route for health check"""
+    print("Entered health()")
     return "All is well"
 
 
@@ -19,6 +20,7 @@ def health():
 @app.route("/<path:path>")
 def catch_all(path):
     """Respond with HTML page"""
+    print("Entered catch_all({})".format(path))
     return send_file('response.html')
 
 
