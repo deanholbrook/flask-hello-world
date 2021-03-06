@@ -1,5 +1,5 @@
 """Minimalist web app. Respond to any request with a cheery 'Hello World!' """
-from flask import Flask, send_file
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -16,12 +16,13 @@ def health():
     return "All is well"
 
 
-@app.route("/", defaults={'path': ''})
+@app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def catch_all(path):
     """Respond with HTML page"""
     print("Entered catch_all({})".format(path))
-    return send_file('response.html')
+    # return send_file("response.html")
+    return render_template("response.html")
 
 
 if __name__ == "__main__":
