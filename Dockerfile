@@ -2,7 +2,8 @@ FROM python:3.8.5-slim
 
 WORKDIR /app
 
-COPY requirements.txt *.py *.html  /app/
+COPY requirements.txt *.py  /app/
+COPY templates/*.* /app/templates/
 
 RUN python -m pip install --upgrade pip && \
     pip install -r requirements.txt
