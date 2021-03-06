@@ -16,6 +16,12 @@ def health():
     return "All is well"
 
 
+@app.route("/api/hello", methods=["GET"])
+def get_api_hello():
+    payload = dict(status=200, message="Hello, world!")
+    return payload
+
+
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def catch_all(path):
